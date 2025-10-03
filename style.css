@@ -215,6 +215,22 @@ p {
 
 .sp {
   flex: 1;
+  display: flex;
+  color: #254d67;
+  font-weight: 600;
+}
+
+.ps {
+  flex: 1;
+}
+
+.sp p {
+  margin-right: 20px;
+}
+
+.sp p:hover {
+  cursor: pointer;
+  color: black;
 }
 
 #lod {
