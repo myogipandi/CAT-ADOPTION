@@ -1,15 +1,15 @@
 
 function signup() {
-  document.getElementById("up").style.display = "block";
-  document.getElementById("log").style.display = "none";
+  document.getElementById("signup-container").style.display = "block";
+  document.getElementById("login-container").style.display = "none";
 }
 
 function login() {
-  document.getElementById("log").style.display = "block";
-  document.getElementById("up").style.display = "none";
+  document.getElementById("login-container").style.display = "block";
+  document.getElementById("signup-container").style.display = "none";
 }
 
 function clos() {
-  document.getElementById("up").style.display = "none";
-  document.getElementById("log").style.display = "none";
+  document.getElementById("signup-container").style.display = "none";
+  document.getElementById("login-container").style.display = "none";
 }

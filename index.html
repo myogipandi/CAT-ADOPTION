@@ -11,14 +11,14 @@
 
 <body>
 
-  <div class="head">
+  <div class="head-bar">
     <span>
       CAT ADOPTION
     </span>
 
-    <div class="sp">
+    <div class="space-one">
 
-      <div class="ps">
+      <div class="space-two">
 
       </div>
 
@@ -35,20 +35,20 @@
       </p>
     </div>
 
-    <button onclick="login()" class="lo">
+    <button onclick="login()" class="login-button">
       Login
     </button>
 
-    <button onclick="signup()" class="su">
+    <button onclick="signup()" class="signup-button">
       Sign Up
     </button>
   </div>
 
-  <p class="h">
+  <p class="heading-one">
     CAT ADOPTION
   </p>
 
-  <div class="s">
+  <div class="information-container">
     <p class="info">
       Welcome to <strong>CAT ADOPTION</strong>. Our cat adoption website connects loving homes with cats in need. We
       provide a
@@ -60,25 +60,25 @@
     </p>
   </div>
 
-  <div class="log" id="log">
-    <span onclick="clos()" id="lod">&#120;</span>
-    <h1 class="logi">Login</h1>
+  <div class="login-container" id="login-container">
+    <span onclick="clos()" id="close-button">&#120;</span>
+    <h1 class="login-heading">Login</h1>
     <p>Fill the details approximately</p>
     <form>
       <label>EMAIL</label>
       <input type="email" placeholder="Email">
       <label>PASSWORD</label>
       <input type="password" placeholder="Password">
-      <button class="mm" type="submit">Login</button>
+      <button class="login-submit-button" type="submit">Login</button>
     </form>
-    <t onclick="signup()" id="login">
+    <t onclick="signup()" id="new-user">
       New User? sign up
     </t>
   </div>
 
-  <div class="up" id="up">
-    <span onclick="clos()" id="lod">&#120;</span>
-    <h1 class="sign">Sign Up</h1>
+  <div class="signup-container" id="signup-container">
+    <span onclick="clos()" id="close-button">&#120;</span>
+    <h1 class="signup-heading">Sign Up</h1>
     <p>Fill the details approximately</p>
     <form>
       <label>NAME</label>
@@ -89,9 +89,9 @@
       <input type="password" placeholder="Password">
       <label>CONFIRM PASSWORD</label>
       <input type="password" placeholder="Confirm Password">
-      <button class="nn" type="submit" value="submit"> Sign Up </button>
+      <button class="signup-submit-button" type="submit" value="submit"> Sign Up </button>
     </form>
-    <t onclick="login()" id="account">
+    <t onclick="login()" id="old-user">
       Already have an account?
     </t>
   </div>
@@ -100,7 +100,7 @@
     FUN FACTS ABOUT CATS
   </p>
 
-  <div class="facts">
+  <div class="fact-container">
 
     <div class="fact-1">
       On average, <br>Cats spend 2/3 of every day sleeping.
