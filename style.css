@@ -1,4 +1,4 @@
-body {
+html {
   margin: 0px;
   height: 850px;
   background-image: url(k.jpg);
@@ -7,6 +7,7 @@ body {
   padding-top: 50px;
   padding-bottom: 500px;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 form {
@@ -233,6 +234,10 @@ p {
   cursor: pointer;
   color: black;
 }
+
+
+
+
 
 #close-button {
   font-style: bold;
