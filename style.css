@@ -1,12 +1,10 @@
 html {
   margin: 0px;
   height: 850px;
-  background-image: url(k.jpg);
-  background-repeat: no-repeat;
-  background-size: 1366px 671px;
+  background-color: white;
   padding-top: 50px;
   padding-bottom: 500px;
-  background-attachment: fixed;
+  background-attachment: static;
   scroll-behavior: smooth;
 }
 
@@ -102,7 +100,7 @@ input {
 }
 
 input::placeholder {
-  color: black;
+  color: #256760;
 }
 
 label {
@@ -144,29 +142,29 @@ p {
 .heading-one {
   font-size: 45px;
   letter-spacing: 6px;
-  color: white;
+  color: #256760;
   margin: 0px;
   margin-top: 20px;
   margin-bottom: 30px;
-}
-
-.information {
-  width: 800px;
-  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .information-container {
-  color: white;
+  color: #256760;
   letter-spacing: 2px;
   line-height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  margin: 0px 10px 0px 10px;
 }
 
 .head-bar {
   margin: 0px;
-  background-color: white;
+  background-color: #00BFFF;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -178,7 +176,7 @@ p {
 }
 
 .head-bar span {
-  color: #254d67;
+  color: #2F3640;
   font-size: 24px;
   margin-left: 10px;
   align-content: center;
@@ -200,19 +198,22 @@ p {
   margin-right: 20px;
   background-color: white;
   color: #254d67;
-  border: 1px solid #254d67;
+  border: 1px solid #2F3640;
   border-radius: 20px;
   font-size: small;
   transition: 0.15s ease;
+  opacity: 0.9;
 }
 
 .head-bar button:hover {
-  opacity: 0.6;
+  opacity: 1;
+  font-weight: 600;
   cursor: pointer;
+
 }
 
 .head-bar button::after {
-  opacity: 0.9;
+  opacity: 0.6;
 }
 
 .space-one {
@@ -235,10 +236,6 @@ p {
   color: black;
 }
 
-
-
-
-
 #close-button {
   font-style: bold;
   font-size: 24px;
@@ -254,30 +251,70 @@ p {
   font-weight: 600;
 }
 
-.fact-container {
-  color: white;
+.fact-title {
+  font-size: 25px;
+  color: #256760;
+  font-weight: 400;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fact-show {
+  color: #256760;
   background-color: transparent;
+  width: fit-content;
+  position: absolute;
+  display: flex;
+  gap: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  align-items: center;
+}
+
+.fact-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 600px;
-  margin-left: 100px;
-  position: absolute;
-  right: 400px;
+  gap: 20px;
 }
 
 .fact-1,
-.fact-2 {
-  border: 2px solid white;
+.fact-2,
+.fact-3,
+.fact-4,
+.fact-5 {
+  border: 2px solid #256760;
   border-radius: 10px;
   padding: 15px;
   font-size: larger;
-  margin-left: 20px;
   font-weight: 600;
+  min-width: 237px;
+  display: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.fact-title {
-  font-size: 25px;
-  color: white;
+.fact-1 {
+  display: block;
+}
+
+
+.left-next-button,
+.right-next-button {
+  background-color: transparent;
+  color: #256760;
+  border: none;
+  font-size: large;
   font-weight: 400;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+
+}
+
+.left-next-button:hover,
+.right-next-button:hover {
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #aaaaaa;
+  border-radius: 10px;
 }

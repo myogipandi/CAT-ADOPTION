@@ -13,3 +13,5 @@ function clos() {
   document.getElementById("signup-container").style.display = "none";
   document.getElementById("login-container").style.display = "none";
 }
+
+document.getElementById("f1").style.display = "block";
